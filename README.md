@@ -1,7 +1,9 @@
 # ONYZE TEST JUNIOR DEVELOPER
 
 Este es el repositorio que incluye varios ejercicios asignados y un script FastAPI.
-
+## Ejecucion simple automatica
+Se ha realizado un menu donde, ademas de poder instalar las dependencias automaticamente, es posible seleccionar los ejercicios y ejecutarlos en un mismo menu.
+Para ello ejecutar : python main.py
 ## Ejecutar Ejercicios 1 y 2 en Python
 python exercise_1.py
 python exercise_2.py
