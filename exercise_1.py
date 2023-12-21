@@ -44,7 +44,7 @@ def get_user_input(prompt):
         except ValueError:
             print("Error: Ingresa un número válido.")
 
-# Input values from the user with error handling
+
 side= get_user_input("Ingresa la longitud del cuadrado del cual deseas calcular sus valores: ")
 radius= get_user_input("Ingresa la longitud del radio del círculo para calcular sus valores correspondientes: ")
 
