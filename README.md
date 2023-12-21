@@ -11,9 +11,9 @@ python exercise_2.py
 ### Ejecutar ejercicio 3
 El script FastAPI está ubicado en el módulo user_api. Asegúrate de tener las dependencias instaladas antes de ejecutarlo.
 
-1. Instala dependencias
+1. Instala dependencias:
 pip install -r user_api/requirements.txt
-2. Ejecuta script fastAPI
+2. Ejecuta script fastAPI:
 uvicorn user_api.exercise_3:app --reload
 3. Accede a la documentación generada automáticamente con Swagger
 En las siguientes URLS puedes ver los endpoints creados y testearlos
