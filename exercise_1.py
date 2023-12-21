@@ -1,4 +1,6 @@
 from abc import ABC, abstractmethod
+from abc import ABCMeta
+
 from math import pi
 
 #definicion de clase abstracta que hereda de ABC
@@ -43,26 +45,30 @@ def get_user_input(prompt):
             return user_input
         except ValueError:
             print("Error: Ingresa un número válido.")
+def run_exercise_1():
 
-# Input values from the user with error handling
-side= get_user_input("Ingresa la longitud del cuadrado del cual deseas calcular sus valores: ")
-radius= get_user_input("Ingresa la longitud del radio del círculo para calcular sus valores correspondientes: ")
+    # Input values from the user with error handling
+    side= get_user_input("Ingresa la longitud del cuadrado del cual deseas calcular sus valores: ")
+    radius= get_user_input("Ingresa la longitud del radio del círculo para calcular sus valores correspondientes: ")
 
 
-#creacion de instancias de las clases concretas
-square=Square(side)
-circle=Circle(radius)
+    #creacion de instancias de las clases concretas
+    square=Square(side)
+    circle=Circle(radius)
 
-#creacion de lista contenedora de instancias
-figure_collection = [square, circle]
+    #creacion de lista contenedora de instancias
+    figure_collection = [square, circle]
 
-#iteracion para determinar el tipo de figura al que pertenece el dato
-for figure in figure_collection:
-    if isinstance(figure, Square):
-        figure_type = "Square"
-    elif isinstance(figure, Circle):
-        figure_type = "Circle"
-    else:
-        figure_type = "Unknown Figure"
+    #iteracion para determinar el tipo de figura al que pertenece el dato
+    for figure in figure_collection:
+        if isinstance(figure, Square):
+            figure_type = "Square"
+        elif isinstance(figure, Circle):
+            figure_type = "Circle"
+        else:
+            figure_type = "Unknown Figure"
 
-    print(f"{figure_type} - Area: {figure.calculate_area()}, Perimeter: {figure.calculate_perimeter()}")
+        print(f"{figure_type} - Area: {figure.calculate_area()}, Perimeter: {figure.calculate_perimeter()}")
+
+if __name__ == "__main__":
+    run_exercise_1()

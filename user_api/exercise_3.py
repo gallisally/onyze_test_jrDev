@@ -71,3 +71,7 @@ def delete_user(dni: str):
     global users_db
     users_db = [u for u in users_db if u.dni != dni]
     return {"message": "User deleted successfully"}
+
+def start_fastapi_server():
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)

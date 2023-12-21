@@ -11,8 +11,13 @@ def find_pair_sum(nums, target_sum):
     return result_pairs
 
 # EJEMPLO DE USO
-nums = [3, 1, 5, 7, 5, 9]
-target_sum = 10
-result_pairs = find_pair_sum(nums, target_sum)
+def run_exercise_2():
 
-print(result_pairs)
+    nums = [3, 1, 5, 7, 5, 9]
+    target_sum = 10
+    result_pairs = find_pair_sum(nums, target_sum)
+
+    print(result_pairs)
+
+if __name__ == "__main__":
+    run_exercise_2()
