@@ -59,7 +59,7 @@ def run_exercise_1():
     #creacion de lista contenedora de instancias
     figure_collection = [square, circle]
 
-    #iteracion para determinar el tipo de figura al que pertenece el dato
+#iteracion para determinar el tipo de figura al que pertenece el dato
     for figure in figure_collection:
         if isinstance(figure, Square):
             figure_type = "Square"
